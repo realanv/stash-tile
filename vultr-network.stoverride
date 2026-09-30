@@ -3,11 +3,14 @@ desc: 显示当前 Stash 出口 IP、地区、ASN 和运营商
 
 tiles:
   - name: Vultr-Network
+    interval: 60
     title: 网络出口
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png
+    content: 正在查询...
+    icon: network
+    backgroundColor: '#663399'
     collapsed: true
-    url: https://ipwho.is/
 
 script-providers:
   Vultr-Network:
     url: https://raw.githubusercontent.com/realanv/stash-tile/main/vultr-network.js
+    interval: 86400
